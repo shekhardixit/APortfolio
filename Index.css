@@ -1,3 +1,13 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+    margin: 0;
+    height: 100vh;
+}
+
 .circle-img {
     width: 600px; /* Adjust the size as needed */
     height: 600px; /* Adjust the size as needed */
@@ -11,9 +21,16 @@
     height: 100%;
     object-fit:contain;
     background-color: rgb(68, 66, 66);
+    padding: 2rem;
 }
-nav{
+.navbar{
     background-color: #052938;
+    height: 5rem;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    
 }
 .navbar-brand{
     color: #fff;
@@ -23,4 +40,34 @@ nav{
 }
 .container{
     margin: 0 2rem;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    display: block;
+    padding: 4rem 0;
+    width: 100%;
+}
+.intro{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    margin-left: 10%;
+}
+.article{
+    background-color: #0a374a;
+    height: calc(100vh - 5rem);
+    z-index: 2px;
+    position: relative;
+    height: 100vh;
+}
+.card{
+    background-color: #fff;
+    height: 50%;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
 }
